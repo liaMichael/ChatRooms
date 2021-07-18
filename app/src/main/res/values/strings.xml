@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Chat Rooms</string>
+
+    <!-- ChatRoom -->
+    <string name="message_hint">Type a message</string>
+</resources>

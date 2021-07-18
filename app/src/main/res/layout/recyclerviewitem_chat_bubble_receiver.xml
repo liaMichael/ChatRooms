@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:paddingVertical="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="60dp">
+
+    <TextView
+        android:id="@+id/recyclerviewitem_chat_bubble_receiver_textview_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/recyclerviewitem_chat_bubble_receiver_textview_message"
+        android:layout_alignBottom="@id/recyclerviewitem_chat_bubble_receiver_textview_message"
+        android:layout_marginBottom="4dp"
+        android:text="14:32"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/recyclerviewitem_chat_bubble_receiver_textview_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclerviewitem_chat_bubble_receiver_group_textview_name"
+        android:layout_alignStart="@+id/recyclerviewitem_chat_bubble_receiver_group_textview_name"
+        android:layout_alignLeft="@+id/recyclerviewitem_chat_bubble_receiver_group_textview_name"
+        android:background="@drawable/chat_bubble_receiver"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:text="How are you doing? This is a long message that should probably wrap."
+        android:textSize="18sp" />
+
+</RelativeLayout>

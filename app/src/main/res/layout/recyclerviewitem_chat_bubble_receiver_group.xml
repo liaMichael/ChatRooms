@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:paddingVertical="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="60dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/recyclerviewitem_chat_bubble_receiver_group_imageview_avatar"
+        android:layout_alignParentLeft="true"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        app:srcCompat="@drawable/blank_avatar" />
+
+    <TextView
+        android:id="@+id/recyclerviewitem_chat_bubble_receiver_group_textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/recyclerviewitem_chat_bubble_receiver_group_imageview_avatar"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/recyclerviewitem_chat_bubble_receiver_group_imageview_avatar"
+        android:paddingBottom="4dp"
+        android:text="Rose"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recyclerviewitem_chat_bubble_receiver_group_textview_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/recyclerviewitem_chat_bubble_receiver_group_textview_message"
+        android:layout_alignBottom="@id/recyclerviewitem_chat_bubble_receiver_group_textview_message"
+        android:layout_marginBottom="4dp"
+        android:text="14:32"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/recyclerviewitem_chat_bubble_receiver_group_textview_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclerviewitem_chat_bubble_receiver_group_textview_name"
+        android:layout_alignStart="@+id/recyclerviewitem_chat_bubble_receiver_group_textview_name"
+        android:layout_alignLeft="@+id/recyclerviewitem_chat_bubble_receiver_group_textview_name"
+        android:background="@drawable/chat_bubble_receiver"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:text="How are you doing? This is a long message that should probably wrap."
+        android:textSize="18sp" />
+
+</RelativeLayout>

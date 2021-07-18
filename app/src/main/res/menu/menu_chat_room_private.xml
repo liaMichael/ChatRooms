@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chat_room_private_menu_menuitem_delete"
+        android:title="Delete chat" />
+    <item
+        android:id="@+id/chat_room_private_menu_menuitem_report"
+        android:title="Report user" />
+</menu>
